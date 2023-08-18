@@ -1,3 +1,5 @@
+import sys
+input = sys.stdin.readline
 
 # + 계속 시간 초과가 나서 검색을 해봤는데, 파이썬의 경우 input()이 아닌 sys.stdin.readline()을 써야 시간초과가 나지 않는다고 한다.
 # 합 배열 공식
