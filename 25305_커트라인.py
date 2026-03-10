@@ -1,0 +1,12 @@
+''' 
+5 2 
+100 76 85 93 98 
+'''
+
+n, k = map(int,input().split())
+score = list(map(int,input().split()))
+
+score.sort()
+print(score[-k])
+
+            
