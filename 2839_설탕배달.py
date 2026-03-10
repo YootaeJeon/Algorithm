@@ -27,10 +27,3 @@ while n >= 0:   # 3kg씩 계속 빼다가 0이하가 되면 정확히 만들 수
     count += 1
 else:
     print(-1)
-    
-    
-
-
-
-
-print(count)
