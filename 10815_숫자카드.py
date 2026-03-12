@@ -14,3 +14,23 @@ for j in range(M):
         print(0, end=' ')
     else:
         print(1, end=' ')
+      
+'''
+ GPT 5.4 풀이
+ #GPT
+import sys
+input = sys.stdin.readline
+
+n = int(input())
+cards = set(map(int, input().split()))
+
+m = int(input())
+check = list(map(int, input().split()))
+
+for num in check:
+    if num in cards:
+        print(1, end=' ')
+    else:
+        print(0, end=' ')
+
+'''       
