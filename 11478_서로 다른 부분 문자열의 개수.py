@@ -1,16 +1,13 @@
-N, M = map(int, input().split())
-A = list(map(int, input().split()))
-B = list(map(int, input().split()))
+# 근데 1초인데 흠 ... 우선 생각나는 대로 해보기 
 
-A_S = set()
-B_S = set()
+# 1,000이하인거 꼭 확인할 것...이중for문가능
 
-for _ in A:
-    A_S.add(_)
-    
-for _ in B:
-    B_S.add(_)
+s = input()
 
-result = A_S ^ B_S
+result = set()
+
+for i in range(len(s)):
+    for j in range(i+1, len(s)+1):
+        result.add(s[i:j])
 
 print(len(result))
