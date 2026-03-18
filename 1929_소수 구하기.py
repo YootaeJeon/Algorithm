@@ -1,4 +1,3 @@
-# M이상 N이하의 소수를 모두 출력하는 프로그램을 작성
 import sys
 input = sys.stdin.readline
 
@@ -10,13 +9,8 @@ def is_prime(x):
             return False
     return True
 
-t = int(input())
+M, N = map(int, input().split())
 
-for _ in range(t):
-    n = int(input())
-    
-    while True:
-        if is_prime(n):
-            print(n)
-            break
-        n += 1
+for i in range(M, N + 1):
+    if is_prime(i):
+        print(i)
