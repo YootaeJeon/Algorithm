@@ -24,21 +24,16 @@
 '''
 
 # 배수와 약수..?
+# 메모리 초과 
 N = int(input())
 
-windows = [0]*N
+windows = [0] * (N + 1)  # 1번부터 쓰려고 +1
 
-# 약수 공식 넣기 
-def gcd(a):
-    
+for i in range(1, N + 1):        # i번째 사람
+    for j in range(i, N + 1, i): # i의 배수
+        windows[j] = 1 - windows[j]  # 토글
 
-for i in range(1,N+1):
-    for j in range(1,N+1):
-        if windows[i*j] == 0: # 닫혀있으면 
-            windows[j] == 1
-        else:
-            windows[j]==0 
-print(windows)
+print(sum(windows))  # 열린 창문 개수
 '''
 
 n = int(input())
