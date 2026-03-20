@@ -20,9 +20,26 @@
 # 짝수 마지막 > 닫힘 
 '''
 
+
+'''
+
 # 배수와 약수..?
-n = int(input())
-print(int(n ** 0.5))
-    
+N = int(input())
+
+windows = [0]*N
+
+# 약수 공식 넣기 
+def gcd(a):
     
 
+for i in range(1,N+1):
+    for j in range(1,N+1):
+        if windows[i*j] == 0: # 닫혀있으면 
+            windows[j] == 1
+        else:
+            windows[j]==0 
+print(windows)
+'''
+
+n = int(input())
+print(int(n ** 0.5))
